@@ -1,5 +1,12 @@
+
+@font-face {
+    font-family: 'Noto sans';
+    src: url(Noto_Sans)
+}
+
 body {
     background-color: #8ED0D9;
+    font-family: 'noto sans', sans-serif;
 }
 
 header {
@@ -10,7 +17,6 @@ header {
 .container {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
 }
 
 .header_links {
@@ -48,14 +54,24 @@ section {
     height: 412px;
     background-color: white;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-right: 20px;
 }
 
-.black_background {
+.card_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.discount_text {
     background-color: black;
     color: white;
     width: fit-content;
     position: relative;
-    left: 20px;
+    left: -110px;
     top: 20px;
 }
 
@@ -67,19 +83,50 @@ section {
     }
 .nav1 {
         display: none;
+        margin-top: 40px;
     }
+
+.h2 {
+    font-size: 48pt;
+    font-weight: 400;
+    font-family: 'noto sans', sans-serif;
+    text-align: center;
+}
+.h3 {
+    font-size: 20pt;
+    font-family: 'noto sans',sans-serif;
+    margin-bottom: 15px;
+}
+.p_strikethrough {
+    text-decoration: line-through;
+    margin-right: 15px;
+}
+.p_underline {
+    background-color: #d64c61;
+}
+
+.price_text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.more_info {
+    font-size: 10pt;
+    text-decoration: underline;
+    margin-top: 15px;
+}
 
 @media (min-width: 866px) {
-        .half_text {
-             width: 50vw;
-        }
-        .half_image {
-             width: 50vw;
-        }
+    .half_text {
+         width: 50vw;
     }
+    .half_image {
+         width: 50vw;
+    }
+}
 
 @media (min-width: 900px) {
-    .nav1 {
-        display: contents;
-    }
+.nav1 {
+    display: contents;
+}
 }
