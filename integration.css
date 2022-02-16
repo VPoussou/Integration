@@ -12,6 +12,8 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 8rem;
 }
 
 .container {
@@ -25,8 +27,8 @@ header {
 }
 
 .img_panier {
-    margin-top: -30px;
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 button {
@@ -38,16 +40,23 @@ button {
     border: none;
 }
 
+.discover {
+    margin-block: 40px;
+}
+
 h1 {
-    font-size: 64px;
+    font-size: 36px;
     letter-spacing: 0.15cm;
     font-family: 'Noto Sans', sans-serif;
 }
 
-section {
+.section_un {
     display: flex;
     flex-wrap: wrap;
+    background-color: rgb(187, 221, 250);
 }
+
+
 
 .card {
     width: 316px;
@@ -91,6 +100,8 @@ section {
     font-weight: 400;
     font-family: 'noto sans', sans-serif;
     text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
 }
 .h3 {
     font-size: 20pt;
@@ -116,6 +127,40 @@ section {
     margin-top: 15px;
 }
 
+.avis_container {
+    flex-wrap: wrap;
+    flex-basis: 0;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    gap: 20px;
+
+}
+
+strong {
+    font-weight: bold;
+    font-size: larger;
+}
+.text_avis {
+    width: 50vh;
+}
+
+.about {
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+.about_div {
+    width: 100vw;
+    background-color : white;
+}
+
+.about_title {
+    margin-top: 40px;
+}
+.about_image {
+width: 100vw;
+}
+
+
 @media (min-width: 866px) {
     .half_text {
          width: 50vw;
@@ -123,10 +168,22 @@ section {
     .half_image {
          width: 50vw;
     }
+    .about_div {
+        width: 50vw;
+    }
+    .about_image {
+        width: 50vw;
+    }
 }
 
 @media (min-width: 900px) {
-.nav1 {
-    display: contents;
+    .nav1 {
+        display: contents;
+    }
 }
+
+@media (min-width: 460px) {
+    h1 {
+        font-size: 60px;
+    }
 }
