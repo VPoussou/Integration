@@ -10,25 +10,76 @@ header {
 .container {
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
-
-
+    margin-top: 40px;
 }
 
 .header_links {
-    margin-inline: 30px;
+    margin-inline: 4vw;
+    font-family: 'noto sans' sans-serif;
 }
 
 .img_panier {
-    margin-right: 50px;
+    margin-top: -30px;
+    margin-left: 20px;
 }
 
-.header_button {
+button {
     padding: 10px 45px;
-    width: 159px;
-    height: 64px;
+    height: 45px;
     border-radius: 10px;
     background: #DB2540;
+    color: white;
+    border: none;
 }
 
+h1 {
+    font-size: 64px;
+    letter-spacing: 0.15cm;
+    font-family: 'Noto Sans', sans-serif;
+}
 
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 316px;
+    height: 412px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.black_background {
+    background-color: black;
+    color: white;
+    width: fit-content;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
+.half_text {
+        width: 100vw;
+    }
+.half_image {
+        width: 100vw;
+    }
+.nav1 {
+        display: none;
+    }
+
+@media (min-width: 866px) {
+        .half_text {
+             width: 50vw;
+        }
+        .half_image {
+             width: 50vw;
+        }
+    }
+
+@media (min-width: 900px) {
+    .nav1 {
+        display: contents;
+    }
+}
