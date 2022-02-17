@@ -155,11 +155,86 @@ strong {
 
 .about_title {
     margin-top: 40px;
+    margin-bottom: 40px;
+}
+li {
+    margin-block: 1.25rem;
+}
+
+.know_more {
+    margin-block: 1.25rem;
+}
+
+.lets_go_button {
+    margin-block: 1.875rem;
 }
 .about_image {
 width: 100vw;
 }
 
+.avis_abonnes {
+    padding:  2.5rem;
+}
+
+.customer_journey {
+    width: 100vw;
+}
+
+footer {
+    background-color: #272727;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
+}
+
+.footer_titles {
+    color: #F2DA02;
+    margin-block: 20px;
+    text-align: center;
+    height: fit-content;
+}
+.footer_section_logos {
+    display: flex;
+    justify-content: center;
+    margin-block: 1.25rem;
+}
+.container_logo_text {
+    display:flex;
+    flex-direction: column;
+}
+.logo {
+    margin-inline: .9375rem;
+}
+.footer_section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 2rem;
+}
+.footer_text {
+    color: white;
+    margin-block: 1.25rem;
+}
+
+.footer_line {
+    height: 1px;
+    width: 80vw;
+    margin-inline: auto;
+    margin-block: 2rem;
+    background-color: white;
+}   
+.appdownload_img {
+    width: min-content;
+    margin-block: 1.25rem;
+}
+
+@media (min-width: 700px) {
+    .footer_line {
+        display: none;
+    }
+}
 
 @media (min-width: 866px) {
     .half_text {
