@@ -48,6 +48,11 @@ header {
 
 .burger_menu_icon {
     max-width: 15%;
+    margin-right: 6vw;
+}
+
+.nav2 {
+    width: 100vw;
 }
 
 .img_panier {
@@ -116,6 +121,11 @@ h1 {
     position: relative;
     left: -110px;
     top: 20px;
+}
+
+.description_text {
+    text-align: center;
+    width: 160px;
 }
 
 .half_text {
