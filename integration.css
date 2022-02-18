@@ -1,9 +1,4 @@
 
-@font-face {
-    font-family: 'Noto sans';
-    src: url(Noto_Sans)
-}
-
 img {
     max-width: 100%;
 }
@@ -30,14 +25,13 @@ header {
 
 .header_links {
     margin-inline: 16px;
-    font-family: 'noto sans' sans-serif;
+    font-family: 'noto sans', sans-serif;
     flex-shrink: 1;
 }
 .header_button {
     flex-shrink: 1;
 }
 
-}
 .header2_items {
     flex-shrink: 1;
 }
