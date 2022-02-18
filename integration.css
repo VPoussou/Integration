@@ -17,6 +17,10 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 8rem;
+    position: fixed;
+    top: 0px;
+    background-color: #8ED0D9;
+    width: 100vw;
 }
 
 .container {
@@ -53,6 +57,10 @@ header {
 
 .nav2 {
     width: 100vw;
+    align-items: center;
+    position: fixed;
+    background-color: #8ED0D9;
+    height: 8rem;
 }
 
 .img_panier {
@@ -92,6 +100,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(187, 221, 250);
+    margin-top: 8rem;
 }
 
 
@@ -227,11 +236,11 @@ width: 100vw;
 
 .customer_journey {
     width: 100vw;
+    display: none;
     
 }
 .txt_img {
-    position: relative;
-    width: 30vw;
+  margin-block: 1.25rem;
 }
 .txt_img1 {
     top: 35vw;
@@ -299,6 +308,19 @@ footer {
     margin-block: 1.25rem;
 }
 
+@media (min-width: 550px) {
+    .customer_journey {
+        display: block;
+    }
+    .txt_img {
+        position: relative;
+        width: 30vw;
+        margin-block: 0px;
+    }
+    .txt_replace {
+        display: none;
+    }
+}
 @media (min-width: 700px) {
     .footer_line {
         display: none;
