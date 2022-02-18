@@ -4,6 +4,9 @@
     src: url(Noto_Sans)
 }
 
+img {
+    max-width: 100%;
+}
 body {
     background-color: #8ED0D9;
     font-family: 'noto sans', sans-serif;
@@ -22,18 +25,48 @@ header {
 }
 
 .header_links {
-    margin-inline: 4vw;
+    margin-inline: 16px;
     font-family: 'noto sans' sans-serif;
+    flex-shrink: 1;
+}
+.header_button {
+    flex-shrink: 1;
+}
+
+}
+.header2_items {
+    flex-shrink: 1;
+}
+
+.boufRight_logo2 {
+    max-width: 30%;
+}
+
+.panier_logo2 {
+    max-width: 15%;
+}
+
+.burger_menu_icon {
+    max-width: 15%;
 }
 
 .img_panier {
     margin-left: 20px;
     margin-right: 20px;
-}
+    flex-shrink: 1;
+    }
 
 button {
     padding: 10px 45px;
     height: 45px;
+    border-radius: 10px;
+    background: #DB2540;
+    color: white;
+    border: none;
+}
+.button_small {
+    padding: 10px 15px;
+    height: 35px;
     border-radius: 10px;
     background: #DB2540;
     color: white;
@@ -68,6 +101,7 @@ h1 {
     align-items: center;
     margin-top: 30px;
     margin-right: 20px;
+    margin-left: 20px;
 }
 
 .card_container {
@@ -151,6 +185,7 @@ strong {
 .about_div {
     width: 100vw;
     background-color : white;
+    text-align: center;
 }
 
 .about_title {
@@ -173,11 +208,35 @@ width: 100vw;
 }
 
 .avis_abonnes {
-    padding:  2.5rem;
+    margin-block: 2.5rem;
+}
+
+.txt_img_container {
+    height: fit-content;
 }
 
 .customer_journey {
     width: 100vw;
+    
+}
+.txt_img {
+    position: relative;
+    width: 30vw;
+}
+.txt_img1 {
+    top: 35vw;
+}
+.txt_img2 {
+    top: 12vw;
+    left: 25vw;
+}
+.txt_img3 {
+    top: 10vw;
+    left: 70vw;
+}
+.txt_img4 {
+    top: 38vw;
+    left: 60vw;
 }
 
 footer {
@@ -254,6 +313,9 @@ footer {
 @media (min-width: 900px) {
     .nav1 {
         display: contents;
+    }
+    .nav2 {
+        display: none;
     }
 }
 
